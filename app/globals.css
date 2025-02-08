@@ -28,13 +28,3 @@
     -webkit-text-stroke: 1px #fdc11f;
   }
 } 
-
-
-/* @layer base {
-  * {
-    @apply border-border;
-  }
-  body {
-    @apply bg-background text-foreground;
-  }
-} */

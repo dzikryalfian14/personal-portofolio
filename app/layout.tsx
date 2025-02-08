@@ -11,7 +11,7 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: "Dzikry Alfian",
-  description: "Generated to make my portofolio view",
+  description: "Portofolio Dzikry Alfian, Web Developer dengan pengalaman pengembangan web menggunakan vue, react, next, codeigniter",
 };
 
 export default function RootLayout({
@@ -23,7 +23,7 @@ export default function RootLayout({
     <html lang="en">
        <body className={jetbrainsMono.variable}>
         <Header />
-       {children}
+        {children}
       </body>
     </html>
   );
