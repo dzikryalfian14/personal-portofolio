@@ -35,7 +35,7 @@ const MobileNavbar = () => {
   return (
     <Sheet>
       <SheetTrigger className="flex justify-center items-center">
-        <CiMenuFries className="text-[32px] text-accent" />
+        <CiMenuFries className="text-[32px] text-sky-600 " />
       </SheetTrigger>
       <SheetContent className="flex flex-col">
         {/* Logo */}
@@ -53,8 +53,8 @@ const MobileNavbar = () => {
                 href={link.path}
                 className={`${
                   link.path == pathname &&
-                  "text-accent border-b-2 border-accent font-semibold"
-                } text-xl capitalize hover:text-accent transition-all`}
+                  "text-sky-600 border-b-2 border-sky-600 font-semibold"
+                } text-xl capitalize hover:text-cyan transition-all`}
               >
                 {link.name}
               </Link>
