@@ -25,8 +25,8 @@ const config: Config = {
       colors: {
         primary: "#1c1c22",
         accent: {
-          DEFAULT: "#fdc11f",
-          hover: "#e1ac1b",
+          DEFAULT: "#0284C7",
+          hover: "#0369A1",
         },
       },
     },
