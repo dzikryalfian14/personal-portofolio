@@ -26,8 +26,10 @@ const Home = () => {
 
             {/* Tech yang disukai */}
             <div className="text-sm md:text-md font-bold text-primary mt-4 dark:text-white">
-              Tech experience :
-              <CurrentTech />
+              Tech experience:
+              <div className="text-center mt-1 dark:text-white">
+                <CurrentTech />
+              </div>
             </div>
 
             {/* Button and social media */}
