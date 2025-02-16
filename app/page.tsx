@@ -1,4 +1,5 @@
 import CurrentTech from "@/components/CurrentTech";
+import DownloadCv from "@/components/DownloadCV";
 import Photo from "@/components/Photo";
 import Social from "@/components/Social";
 import type { Metadata } from "next";
@@ -35,7 +36,7 @@ const Home = () => {
 
             {/* Button and social media */}
             <div className="flex mt-8 flex-col lg:flex-row items-center gap-8">
-              
+              <DownloadCv />
               <div className="mb-8 lg:mb-0">
                 <Social  
                   containerStyles="flex gap-4"
