@@ -16,12 +16,12 @@ const Home = () => {
           <div className="text-center lg:text-left order-2 lg:order-none">
             <h2 className="h2 text-sky-600 mb-2">Dzikry Alfian</h2>
             <span className="h3">Software Engineer</span>
-            <p className="text-primary mt-4 dark:text-white leading-relaxed text-sm text-center lg:text-left lg:mr-14 text-md md:text-lg">
+            <p className="text-primary mt-4 dark:text-white leading-relaxed text-sm text-justify lg:text-left lg:mr-14 text-md md:text-lg">
               I am a web developer with one year of experience, 
               specializing in frontend development using React.js and Vue.js. 
               I have expertise in building responsive and interactive user interfaces 
               while seamlessly integrating with backend services 
-              such as RESTful APIs and GraphQL
+              such as RESTful APIs
             </p>
 
             {/* Tech yang disukai */}
