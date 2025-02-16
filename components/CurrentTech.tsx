@@ -43,11 +43,11 @@ const currentTech = [
 ];
 const CurrentTech = () => {
   return (
-    <div className="w-80 overflow-hidden">
+    <div className="w-full overflow-hidden">
       <motion.div
         className="flex gap-6 text-[30px] lg:text-[36px] whitespace-nowrap"
         animate={{ x: ["100%", "-100%"] }} 
-        transition={{ repeat: Infinity, duration: 15, ease: "easeInOut" }} 
+        transition={{ repeat: Infinity, duration: 15, ease: "linear" }} 
       >
         {currentTech.map((item, index) => (
           <motion.div key={index} whileHover={{ scale: 1.2 }}>
