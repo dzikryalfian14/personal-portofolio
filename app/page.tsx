@@ -2,6 +2,7 @@ import CurrentTech from "@/components/CurrentTech";
 import DownloadCv from "@/components/DownloadCV";
 import Photo from "@/components/Photo";
 import Social from "@/components/Social";
+import Statistics from "@/components/Statisitics";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -54,7 +55,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      
+      <Statistics />
     </section>
   );
 };
