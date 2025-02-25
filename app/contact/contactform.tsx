@@ -54,7 +54,8 @@ const ContactForm = () => {
       } else {
         setAlert({ type: "error", message: "Failed to send message." });
       }
-    } catch (_error) {
+    } catch (error) {
+      console.error("Error sending message:", error);
       setAlert({ type: "error", message: "An error occurred." });
     } finally {
       setLoading(false);
