@@ -24,29 +24,30 @@ const Header = () => {
   const darkModeButton = (
     <Button
       onClick={toggleDarkMode}
-      className="text-sm lg:text-xl rounded-full p-4 h-6 md:h-[44px]"
+      className="text-sm lg:text-xl 2xl:text-3xl 2xl:p-6 rounded-full p-4 h-6 md:h-[44px]"
     >
       {darkMode ? <MdLightMode /> : <MdDarkMode />}
     </Button>
   );
 
+
   return (
-    <header className="py-8 xl:py-6 text-white">
+    <header className="py-8 xl:py-6 text-white ">
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
         <Link href={"/"}>
           <Image
             src={darkMode ? logo : logoDark}
-            className="w-28 md:w-[150px]"
+            className="w-28 md:w-[150px] 2xl:w-[200px] 3xl:w-[250px]"
             alt="logo"
           />
         </Link>
 
         {/* Dekstop Nav */}
         <div className="hidden lg:flex items-center gap-8">
-        <Navbar />
+          <Navbar />
           <Link href={"/contact"}>
-            <Button>Contact Me</Button>
+            <Button className="2xl:text-xl 2xl:font-bold">Hire me</Button>
           </Link>
           {darkModeButton}
         </div>

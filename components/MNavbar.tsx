@@ -4,7 +4,9 @@ import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { CiMenuFries } from "react-icons/ci";
 import logoDark from "../public/assets/logoDark.svg";
+import logoLight from "../public/assets/logo.svg";
 import Image from "next/image";
+import { useTheme } from "next-themes";
 
 const links = [
   {
@@ -31,38 +33,40 @@ const links = [
 
 const MobileNavbar = () => {
   const pathname = usePathname();
+  const { theme } = useTheme();
+  const logo = theme === "dark" ? logoLight : logoDark;
 
   return (
-    <Sheet>
-      <SheetTrigger className="flex justify-center items-center">
-        <CiMenuFries className="text-[32px] text-sky-600 " />
-      </SheetTrigger>
-      <SheetContent className="flex flex-col">
-        {/* Logo */}
-        <div className="mt-20 mb-16 flex justify-center">
-          <Link href={"/"}>
-            <Image src={logoDark} width={150} alt="logo" />
-          </Link>
-        </div>
-        {/* Nav */}
-        <nav className="flex flex-col justify-center items-center gap-8 text-primary dark:text-white">
-          {links.map((link, index) => {
-            return (
-              <Link
-                key={index}
-                href={link.path}
-                className={`${
-                  link.path == pathname &&
-                  "text-sky-600 border-b-2 border-sky-600 font-semibold"
-                } text-xl capitalize hover:text-cyan transition-all`}
-              >
-                {link.name}
-              </Link>
-            );
-          })}
-        </nav>
-      </SheetContent>
-    </Sheet>
+      <Sheet>
+        <SheetTrigger className="flex justify-center items-center">
+          <CiMenuFries className="text-[32px] text-accent" />
+        </SheetTrigger>
+        <SheetContent className="flex flex-col">
+          {/* Logo */}
+          <div className="mt-20 mb-16 flex justify-center">
+            <Link href={"/"}>
+              <Image src={logo} width={150} alt="logo" />
+            </Link>
+          </div>
+          {/* Nav */}
+          <nav className="flex flex-col justify-center items-center gap-8 text-primary dark:text-white">
+            {links.map((link, index) => {
+              return (
+                <Link
+                  key={index}
+                  href={link.path}
+                  className={`${
+                    link.path == pathname &&
+                    "text-accent border-b-2 border-accent font-semibold"
+                  } text-xl capitalize hover:text-accent transition-all`}
+                >
+                  {link.name}
+                </Link>
+              );
+            })}
+          </nav>
+        </SheetContent>
+      </Sheet>
   );
 };
 
