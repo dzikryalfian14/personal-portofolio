@@ -13,7 +13,31 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: "Dzikry Alfian",
-  description: "Portofolio Dzikry Alfian, Web Developer dengan pengalaman pengembangan web menggunakan vue, react, next, codeigniter",
+  description: "Hi! My Name is Dzikry Alfian, I am a web developer with one year of experience, specializing in frontend development using React.js and Vue.js. I have expertise in building responsive and interactive user interfaces while seamlessly integrating with backend services such as RESTful APIs.",              
+  authors: {
+    name: "Dzikry Alfian",
+    url: "https://dzikryalfian.vercel.app/",
+  },
+  icons: [
+    { url: "https://dzikryalfian.vercel.app/favicon.ico", type: "image/x-icon" },
+    { url: "https://dzikryalfian.vercel.app/favicon.png", type: "image/png" },
+  ],
+  openGraph: {
+    type: "website",
+    title: "Dzikry Alfian",
+    description:
+      "Hi! My Name is Dzikry Alfian, I am a web developer with one year of experience, specializing in frontend development using React.js and Vue.js. I have expertise in building responsive and interactive user interfaces while seamlessly integrating with backend services such as RESTful APIs.",
+    siteName: "Portofolio Dzikry Alfian",
+    images: [
+      {
+        url: "https://dzikryalfian.vercel.app/photo.png",
+        alt: "Dzikry Alfian - Software Engineer",
+      },
+    ],
+  },
+  alternates: {
+    canonical: "https://dzikryalfian.vercel.app/",
+  },
 };
 
 export default function RootLayout({

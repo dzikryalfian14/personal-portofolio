@@ -24,7 +24,7 @@ const Home = () => {
               specializing in frontend development using React.js and Vue.js. 
               I have expertise in building responsive and interactive user interfaces 
               while seamlessly integrating with backend services 
-              such as RESTful APIs
+              such as RESTful APIs.
             </p>
 
             {/* Tech yang disukai */}
