@@ -12,35 +12,25 @@ import {
 } from "@/components/ui/tooltip";
 import Link from "next/link";
 import Image from "next/image";
-import lesyukImage from "@/public/assets/work/lesyuk.webp";
-import meetingImage from "@/public/assets/work/meeting.webp";
-import todoImage from "@/public/assets/work/todo.webp";
-import ringkasImage from "@/public/assets/work/ringkaaja.webp";
-import melatiImage from "@/public/assets/work/melati.webp";
-import bimoviesImage from "@/public/assets/work/bimovies.webp";
-import prakalightImage from "@/public/assets/work/praka.webp";
-import wawasanImage from "@/public/assets/work/wawasan.webp";
-import rppImage from "@/public/assets/work/rpp.webp"; //
-import juraganImage from "@/public/assets/work/juragan.webp";
-import portoImage from "@/public/assets/work/porto.webp";
+import UjianDigitalNSI from "@/public/assets/portofolio/ujiandigitalnsi.webp";
+import MentalKu from "@/public/assets/portofolio/mentalku.webp";
 import WorkSlideBtn from "@/components/WorkSlideBtn";
 import { motion } from "framer-motion";
-
 
 const projects = [
   {
     num: "01",
     category: "Frontend",
-    title: "Portofolio React JS",
+    title: "Mentalku",
     description:
-      "An interactive portfolio built with React JS and Tailwind CSS, showcasing my projects and skills in web development. Access the live demo and source code via the links below.",
-    image: portoImage,
-    live: "https://portofolio-bimasanjaya.netlify.app/",
+      "An interactive web built with React JS and Tailwind CSS, showcasing my projects and skills in web development. Access the live demo and source code via the links below.",
+    image: MentalKu,
+    live: "https://mentalku.vercel.app/",
     github:
-      "hhttps://github.com/Bimasanjaya0704/Portofolio-Web-using-React-and-Tailwind-v3",
+      "https://github.com/dzikryalfian14/MentalKu",
     stack: [
       {
-        name: "React Js",
+        name: "React Js Vite",
       },
       {
         name: "Tailwind Css",
@@ -50,180 +40,18 @@ const projects = [
   {
     num: "02",
     category: "Fullstack",
-    title: "Todolist using Laravel 10",
+    title: "Ujian Digital",
     description:
-      "The Todolist App I developed using Laravel 10 and Bootstrap is a modern solution for users who want to efficiently manage their tasks. By combining the power of Laravel in web development with the responsive design of Bootstrap, this application offers an intuitive and enjoyable user experience.",
-    image: todoImage,
-    live: "https://todolistajayuk.000webhostapp.com/todolist",
-    github: "https://github.com/Bimasanjaya0704/Todolist-Laravel",
-    stack: [
-      {
-        name: "Laravel 10",
-      },
-      {
-        name: "Bootstrap",
-      },
-    ],
-  },
-
-  {
-    num: "03",
-    category: "Frontend",
-    title: "Lesyuk",
-    description:
-      "The LesYuk project is an innovative web application designed to streamline the process of finding the perfect tutor for students.",
-    image: lesyukImage,
-    live: "https://lesyuk.netlify.app/",
-    github: "",
-    stack: [
-      {
-        name: "React Js",
-      },
-      {
-        name: "Tailwind Css",
-      },
-    ],
-  },
-  {
-    num: "04",
-    category: "Fullstack",
-    title: "Meeting Schedular",
-    description:
-      "Meeting Scheduler is a user-friendly website designed to simplify the process of organizing and managing meetings. It allows users to easily schedule, reschedule, and coordinate meetings with colleagues or clients.",
-    image: meetingImage,
+      "Ujian Digital NSI I developed using Code Igniter 4 and Bootstrap is a modern solution for users who want to efficiently manage their tasks. By combining the power of PHP in web development with the responsive design of Bootstrap, this application offers an intuitive and enjoyable user experience.",
+    image: UjianDigitalNSI,
     live: "",
-    github:
-      "https://github.com/Bimasanjaya0704/Meeting-scheduler-with-nextjs--and-kinde",
+    github: "https://github.com/dzikryalfian14/ujiandigitalnsi",
     stack: [
       {
-        name: "Next JS",
+        name: "Code Igniter 4",
       },
       {
-        name: "Firebase",
-      },
-    ],
-  },
-  {
-    num: "05",
-    category: "Fullstack",
-    title: "RingkasAJA",
-    description:
-      "RingkasAJA is a text summarization project using the Maximum Marginal Relevance (MMR) method. Its focus is on providing users with concise and relevant summaries while eliminating unnecessary details.",
-    image: ringkasImage,
-    live: "",
-    github: "https://github.com/Bimasanjaya0704/peringkas_teks_otomatis_MMR",
-    stack: [
-      {
-        name: "Python",
-      },
-      {
-        name: "Tailwind Css",
-      },
-    ],
-  },
-  {
-    num: "06",
-    category: "Mobile",
-    title: "App Melati",
-    description:
-      "Melati App is an innovative application that provides an in-depth experience of understanding the components and workings of electric bicycles.",
-    image: melatiImage,
-    live: "",
-    github: "",
-    stack: [
-      {
-        name: "Flutter",
-      },
-    ],
-  },
-  {
-    num: "07",
-    category: "Frontend",
-    title: "BIMovies",
-    description:
-      "Developing a Web API Movie application that allows users to search for movie information such as title, images, and ratings.",
-    image: bimoviesImage,
-    live: "https://webmovies-bimovies.netlify.app/",
-    github:
-      "https://github.com/Bimasanjaya0704/Web-movies-using-ReactJS-and-Tailwind-with-TMDB-API",
-    stack: [
-      {
-        name: "React Js",
-      },
-      {
-        name: "Tailwind Css",
-      },
-    ],
-  },
-  {
-    num: "08",
-    category: "Frontend",
-    title: "Prakalight",
-    description:
-      "Prakalight is a dynamic project that focuses on providing comprehensive information about website development services.",
-    image: prakalightImage,
-    live: "http://prakalight.live/",
-    github: "",
-    stack: [
-      {
-        name: "React Js",
-      },
-      {
-        name: "Tailwind Css",
-      },
-    ],
-  },
-  {
-    num: "09",
-    category: "Wordpress",
-    title: "Wawasan Edukasi",
-    description:
-      "Wawasan Edukasi is a website dedicated to providing educational news and insights to a diverse audience.",
-    image: wawasanImage,
-    live: "",
-    github: "",
-    stack: [
-      {
-        name: "Wordpress",
-      },
-      {
-        name: "Elementor",
-      },
-    ],
-  },
-  {
-    num: "10",
-    category: "Fullstack",
-    title: "RPP Maker",
-    description:
-      "Rancangan Pelaksanaan Pembelajaran (RPP) Maker is a project to make RPP for teacher. This project is university project. Already have patent from Ministry of Law and Human Rights of the Republic of Indonesia.",
-    image: rppImage,
-    live: "",
-    github: "",
-    stack: [
-      {
-        name: "PHP",
-      },
-      {
-        name: "Bootstrap",
-      },
-    ],
-  },
-  {
-    num: "11",
-    category: "Frontend",
-    title: "Juragan COD",
-    description:
-      "Juragan COD is a project to manage the delivery from the seller to the expedition provider.",
-    image: juraganImage,
-    live: "",
-    github: "",
-    stack: [
-      {
-        name: "React Js",
-      },
-      {
-        name: "Tailwind",
+        name: "Bootstrap 3",
       },
     ],
   },
@@ -242,7 +70,7 @@ const PortofolioPage = () => {
       animate={{
         opacity: 1,
         transition: {
-          delay: 2,
+          delay: 1,
           duration: 0.4,
           ease: "easeInOut",
         },
