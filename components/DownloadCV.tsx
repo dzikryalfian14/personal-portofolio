@@ -6,7 +6,7 @@ import { FiDownload } from "react-icons/fi";
 const DownloadCv = () => {
   const handleDownload = () => {
     const fileURL =
-      "https://docs.google.com/document/d/1nCxJJ90wq7JrnPLMMKDfsTtVR29oalkE/edit";
+      "https://docs.google.com/document/d/1nCxJJ90wq7JrnPLMMKDfsTtVR29oalkE/edit?tab=t.0";
     window.open(fileURL, "_blank");
   };
 
